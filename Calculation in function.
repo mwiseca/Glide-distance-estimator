@@ -1,0 +1,2 @@
+In this file the calculation is in a function.
+This makes it easer to build a bigger program were the calculation is used more than once.
