@@ -10,14 +10,15 @@ glide_ratio = {
 }   
 
 def ind():
-    print("   aircraft a      ")
-    print("   aircraft b      ") 
-    print("   aircraft c      ")
-    print("   aircraft d      ")
-    print("   aircraft e      ")
-    print("   aircraft f      ") 
-    print("   aircraft g      ")
-    print("   aircraft h      ")
+    print('''
+                aircraft a      
+                aircraft b       
+                aircraft c      
+                aircraft d      
+                aircraft e      
+                aircraft f      
+                aircraft g      
+                aircraft h         ''')
     
 
 ind()
@@ -39,9 +40,8 @@ while True:
             continue
         elif altitude == "x":
             break
-        result = float(altitude) *   float(glide_ratio[search]) / 5280 
-        print(result)
-        print("miles")
+        print(float(altitude) *   float(glide_ratio[search]) / 5280) 
+        print("miles\n")
     except KeyError:
         print("Enter a valid aircraft name.")
         print("Try again.")
@@ -50,6 +50,7 @@ while True:
         print("Try again.")       
         
         
+ 
       
     
 
