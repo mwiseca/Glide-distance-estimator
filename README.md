@@ -7,4 +7,5 @@ This program gives a rough estimate of glide distance.
 In the dictionary replace aircraft a, b, c, ect with aircraft you want 
 to follow with the corresponding glide ratios.The program asks to enter a aircraft
 than a altitude.
-Than gives a rough estimate of glide distance in miles.
+Than gives a rough estimate of glide distance in miles. 2 c files have been added. One with 
+fflush(stdin; the other with fpurge(stdin); to clear input buffer with different compilers.
