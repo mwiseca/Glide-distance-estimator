@@ -3,6 +3,7 @@
 #include <string.h>
 
 void ind(){
+	     printf("\n");
 	     printf("     aircraft a\n"); 
 	     printf("     aircraft b\n");       
 	     printf("     aircraft c\n");       
@@ -10,7 +11,7 @@ void ind(){
 	     printf("     aircraft e\n");
 	     printf("     aircraft f\n");
 	     printf("     aircraft g\n");
-	     printf("     aircraft h\n");
+	     printf("     aircraft h\n\n");
              }	
 
 
@@ -34,8 +35,12 @@ printf("Enter a aircraft, x to exit or i for index.\n");
 	else if(strcmp(aircraft,"x")==0){
 	break;}
 	printf("Enter a altitude to get a estimated straight line glide distance.\n");
-	scanf("%lf", &alt);
-	__fpurge(stdin); 
+        if(scanf("%lf", &alt)!=1){
+	__fpurge(stdin);
+        printf("Enter a valid altitude.\n");
+        printf("Start over.\n\n");
+        continue;}
+        __fpurge(stdin);	
  if(strcmp(aircraft,ac[0])==0){
  glide_ratio = gr[0];
 }else if(strcmp(aircraft,ac[1])==0){
