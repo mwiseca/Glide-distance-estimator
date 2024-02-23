@@ -40,8 +40,7 @@ while True:
             continue
         elif altitude == "x":
             break
-        print(float(altitude) *   float(glide_ratio[search]) / 5280) 
-        print("miles\n")
+        print(f"\nThe glide distance is {float(altitude) *  float(glide_ratio[search]) / 5280} miles.\n") 
     except KeyError:
         print("Enter a valid aircraft name.")
         print("Try again.")
