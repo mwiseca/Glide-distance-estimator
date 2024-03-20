@@ -1,5 +1,5 @@
 # Glide-distance-estimator
-Estimates glide distance of a aircraft from a altitude.
+Estimates straight line glide distance of a aircraft from a altitude.
 DO NOT USE THIS PROGRAM IN ACTUAL AVIATION.
 This program was ment to be used with aircraft tracking websites and
 flight simulator games only.
