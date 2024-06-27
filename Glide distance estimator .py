@@ -6,7 +6,13 @@ glide_ratio = {
     "aircraft e": 7,
     "aircraft f": 16,
     "aircraft g": 10,
-    "aircraft h": 6,                 
+    "aircraft h": 6,
+    "aircraft i": 14,
+    "aircraft j": 6,
+    "aircraft k": 8,
+    "aircraft l": 5,
+    "aircraft m": 14,
+    "aircraft n": 18
 }   
 
 def ind():
@@ -18,11 +24,19 @@ def ind():
                 aircraft e      
                 aircraft f      
                 aircraft g      
-                aircraft h         ''')
+                aircraft h
+                aircraft i
+                aircraft j     
+                aircraft k
+                aircraft l
+                aircraft m
+                aircraft n        ''')
+                                  
+
     
 
 ind()
-print("Enter a aircraft from index and a altitude to get the estamated glide distance.")
+print("Enter a aircraft from index and a altitude to get the estimated glide distance.")
 print("Enter i for index and x to exit.")
 while True:
     try:
