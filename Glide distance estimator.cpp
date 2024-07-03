@@ -49,7 +49,7 @@ while(true){
 	  else if(altitude == "x"){
 	  break;}
 	  double result = stod(altitude) *   gr.at(search) / 5280;
-          std::cout << "The estimated glide distance is " << result << " miles.\n\n";
+          std::cout << "\nThe estimated glide distance is " << result << " miles.\n\n";
 	}catch(std::out_of_range){
 	 std::cout << "Enter a aircraft in index.\n\n";
 	}catch(std::invalid_argument){
