@@ -15,10 +15,8 @@ void ind(){
  cout << "                \n";
 }
 
+
 int main(){
-ind();
- std::cout << "Enter a aircraft from index and a altitude to get the estimated glide distance.\n";
- std::cout << "Enter i for index and x to exit.\n";
    std::map<std::string,double> gr = {
        {"aircraft a",      15},
        {"aircraft b",       9},
@@ -32,6 +30,9 @@ ind();
        std::string altitude; 
 
 
+ind();
+ std::cout << "Enter a aircraft from index and a altitude to get the estimated glide distance.\n";
+ std::cout << "Enter i for index and x to exit.\n";
 while(true){
          try{ 
 	  std::cout << "Enter a aircraft in index.\n";
