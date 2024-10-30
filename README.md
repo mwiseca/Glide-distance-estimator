@@ -9,3 +9,4 @@ to follow with the corresponding glide ratios.The program asks to enter a aircra
 than a altitude.
 Than gives a rough estimate of glide distance in miles. 2 c files have been added. One with 
 fflush(stdin; the other with fpurge(stdin); to clear input buffer with different compilers.
+The .cpp file is all C except the map and map acces and try catch exception.
