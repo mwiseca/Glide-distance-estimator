@@ -3,3 +3,10 @@ New file added. Glide-distance-estimator-C.cpp
 It is a C++ file mostly in C.
 It may or may not work on all compilers.
 November 2 2024.
+Glide distance estimator2.cpp was added.
+It puts user input in a while loop and uses
+.find() and does not require a std::out_of_range
+exception.
+Becouse the code is more complicated the original
+was left.
+November 3 2024.
