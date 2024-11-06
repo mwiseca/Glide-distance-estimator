@@ -33,7 +33,6 @@ int main(){
  std::cout << "Enter a aircraft from index and a altitude to get the estimated glide distance.\n";
  std::cout << "Enter i for index and x to exit.\n";
 while(true){
-         try{ 
 	  std::cout << "Enter a aircraft in index.\n";
 	  while(getline(std::cin,search)){
 	  auto i = gr.find(search);
@@ -50,16 +49,19 @@ while(true){
 	  break;}
 	  }
 	  std::cout << "Enter a altitude.\n";
-	  getline(std::cin,altitude);
+	  while(getline(std::cin,altitude)){
+	  try{
 	  if(altitude == "i"){
 	  ind();
+	  std::cout << "Enter a altitude.\n"; 
 	  continue;}
 	  else if(altitude == "x"){
-	  break;}
+	  exit(EXIT_SUCCESS);}
 	  double result = stod(altitude) *   gr.at(search) / 5280;
           std::cout << "\nThe estimated glide distance is " << result << " miles.\n\n";
+	  break;
 	}catch(std::invalid_argument){
-	 std::cout << "Enter a valid altitude.\n\n";
+	 std::cout << "Enter a valid altitude.\n\n";}                  
 	}
 }
 
