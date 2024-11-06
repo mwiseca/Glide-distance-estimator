@@ -10,3 +10,5 @@ exception.
 Becouse the code is more complicated the original
 was left.
 November 3 2024.
+Glide distance estimator2.cpp had a while loop added to
+altitude. A valid altitude must be entered to continue.
