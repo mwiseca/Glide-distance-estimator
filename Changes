@@ -13,4 +13,4 @@ November 3 2024.
 Glide distance estimator2.cpp had a while loop added to
 altitude. A valid altitude must be entered to continue.
 All C++ files have been formatted for easier reading.
-Decembeer 29 2024.
+December 29 2024.
