@@ -14,3 +14,7 @@ Glide distance estimator2.cpp had a while loop added to
 altitude. A valid altitude must be entered to continue.
 All C++ files have been formatted for easier reading.
 December 29 2024.
+A all C version has been added Glide distiance estimator.c.
+It uses 2 array instead of a map for key value pairs.
+Its simple but should not be used to store to many aircraft and glide ratios.
+September 16 2025.
