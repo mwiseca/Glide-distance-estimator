@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h> 
 #include <stdlib.h>
+#include <errno.h>
 void flush(){
     int clear;
     while ((clear = getc(stdin)) != '\n' && clear != EOF) {
@@ -41,12 +42,15 @@ int main(){
 
 
     char select[50];
-    char altitude[10];
-    int alt;
+    char altitude[25];
+    long int alt;
     double gr;
+    char *ptr;
+
+    printf("Enter a aircraft from index and a altitude to get the estimated glide distance.\n");
+    printf("Enter i for index and x to exit.\n");
     while(1){
-        printf("Enter a aircraft from index and a altitude to get the estimated glide distance.\n");
-        printf("Enter i for index and x to exit.\n");
+        printf("Enter a aircraft.\n");
         while(fgets(select,sizeof(select),stdin) == NULL) {
             clearerr(stdin);
             printf("\nInvalid input\n\n");
@@ -71,20 +75,34 @@ int main(){
             continue;
         }
         printf("Enter a altitude.\n");
-        while(fgets(altitude,sizeof(altitude),stdin) == NULL || (1)) {
-            clearerr(stdin); 
-            if(strlen(altitude) >= 9) {
+        while(1) {
+        if(fgets(altitude,sizeof(altitude),stdin) == NULL) {
+            clearerr(stdin);
+            printf("\nInvalid input.\n\n");
+            continue;
+            } 
+            altitude[strcspn(altitude,"\n")]=0;
+            if(strlen(altitude) >= 24) {
                 flush();
             }
-            altitude[strcspn(altitude,"\n")]=0;
+            
             if(strcmp(altitude,"i")==0) {
                 keys();
+                printf("\nEnter a altitude.\n\n");
+                continue;
             }else if(strcmp(altitude,"x")==0) {
                 exit(EXIT_SUCCESS);
             }
-            alt = atoi(altitude);
-            if(alt <1) {
-                printf("\nEnter a altitude 1 ft or more.\n\n");
+             errno = 0;
+            alt = strtol(altitude,&ptr,10);
+            if(errno == ERANGE) {
+                printf("\nYou entered to many numbers.\n\n");
+            } else if(*ptr == 0x20) {
+                printf("\nTry not to enter spaces between numbers.\n\n");
+            } else if(ptr == altitude) {
+                printf("\nEnter a number only.\n\n");
+            } else if(*ptr != '\0') {
+                printf("\nTry not to enter text after a number.\n\n");                   
             }else{
                 break;     
         }
