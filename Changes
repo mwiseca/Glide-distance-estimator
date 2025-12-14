@@ -20,3 +20,4 @@ Its simple but should not be used to store to many aircraft and glide ratios.
 September 16 2025.
 The convert string to int in Glide distance estimator.c has been changed from atoi to strtol.
 this gives better error checking.
+December 14 2025.
