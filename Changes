@@ -18,3 +18,5 @@ A all C version has been added Glide distiance estimator.c.
 It uses 2 array instead of a map for key value pairs.
 Its simple but should not be used to store to many aircraft and glide ratios.
 September 16 2025.
+The convert string to int in Glide distance estimator.c has been changed from atoi to strtol.
+this gives better error checking.
