@@ -40,7 +40,7 @@ int main() {
         printf("Enter a aircraft in index.\n");
         while(1) {
             if (fgets(search, SIZE, stdin) == NULL) {
-                printf("\nInvalid input.\n") 
+                printf("\nInvalid input.\n\n"); 
                 clearerr(stdin);
                 continue;
             }        
@@ -62,7 +62,7 @@ int main() {
         printf("Enter a altitude.\n");
         while(1) {
             if (fgets(altitude, SIZE, stdin) == NULL) {
-                printf("\nInvalid input.\n\n);
+                printf("\nInvalid input.\n\n");
                 clearerr(stdin);
                 continue;
             }    
@@ -75,7 +75,7 @@ int main() {
                 exit(EXIT_SUCCESS);
             }
             double result = atof(altitude) * gr.at(search) / 5280;
-            if (atof(altitude) * gr.at(search) / 5280 < 1) {
+            if (atof(altitude) * gr.at(search) / 5280 == 0) {
                 printf("\nEnter a valid altitude only.\n\n");
                 continue;
             } else {
