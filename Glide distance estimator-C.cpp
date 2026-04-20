@@ -4,7 +4,15 @@
 #include <stdio.h>
 #include <string.h>
 #include <string>
-#define SIZE 2000
+#define SIZE 25
+#define MAX 24
+
+void clean(){
+    int clear;     
+    while ((clear = getc(stdin)) != '\n' && clear != EOF) {     
+    } 
+}
+
 void ind() {
 
     printf("               \n");
@@ -45,6 +53,9 @@ int main() {
                 continue;
             }        
             search[strcspn(search, "\n")] = 0;
+            if(strlen) >= MAX) {
+                clean();
+            } 
             auto c = gr.find(search);
             if (strcmp(search, "x") == 0) {
                 exit(EXIT_SUCCESS);
@@ -67,6 +78,9 @@ int main() {
                 continue;
             }    
             altitude[strcspn(altitude, "\n")] = 0;
+            if (strlen(altitude) >= MAX) {
+                clean();
+            }
             if (strcmp(altitude, "i") == 0) {
                 ind();
                 printf("Enter a altitude.\n");
