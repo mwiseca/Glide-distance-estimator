@@ -75,7 +75,7 @@ int main() {
                 exit(EXIT_SUCCESS);
             }
             double result = atof(altitude) * gr.at(search) / 5280;
-            if (atof(altitude) * gr.at(search) / 5280 == 0) {
+            if (atof(altitude) * gr.at(search) / 5280 <= 0) {
                 printf("\nEnter a valid altitude only.\n\n");
                 continue;
             } else {
