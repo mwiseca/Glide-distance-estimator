@@ -53,7 +53,7 @@ int main() {
                 continue;
             }        
             search[strcspn(search, "\n")] = 0;
-            if(strlen) >= MAX) {
+            if(strlen(search) >= MAX) {
                 clean();
             } 
             auto c = gr.find(search);
