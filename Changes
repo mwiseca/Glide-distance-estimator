@@ -21,3 +21,6 @@ September 16 2025.
 The convert string to int in Glide distance estimator.c has been changed from atoi to strtol.
 this gives better error checking.
 December 14 2025.
+Error checking for fgets has been added to Glide distance estimator C.cpp.
+A function to flush input buffer has bee added to Glide distance estimator C.cpp.
+April 21 2026.
