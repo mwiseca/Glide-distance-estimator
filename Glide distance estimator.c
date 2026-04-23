@@ -1,3 +1,7 @@
+//WARNING: Educational demo only - NOT FOR USE IN REAL-WORLD AVIATION.
+//PROVIDED "AS IS" with no warranty.
+
+
 #include <stdio.h>
 #include <string.h> 
 #include <stdlib.h>
