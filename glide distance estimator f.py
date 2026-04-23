@@ -1,3 +1,6 @@
+#WARNING: Educational demo only - NOT FOR USE IN REAL-WORLD AVIATION.
+#PROVIDED "AS IS" with no warranty.
+
 glide_ratio = {
     "Aircraft A": 15,
     "Aircraft B": 9,
