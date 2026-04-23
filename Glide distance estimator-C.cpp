@@ -72,7 +72,7 @@ int main() {
                 printf("Enter a aircraft in index.\n");
                 continue;
             } else if (c == gr.end()) {
-                std::cout << "Enter a aircraft in index only.\n\n";
+                printf("\nEnter a aircraft in index only.\n\n");
                 continue;
             } else {
                 break;
