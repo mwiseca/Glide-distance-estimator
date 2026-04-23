@@ -1,3 +1,6 @@
+//WARNING: Educational demo only - NOT FOR USE IN REAL-WORLD AVIATION.
+//PROVIDED "AS IS" with no warranty.
+
 #include <iostream>
 #include <map>
 #include <string>
