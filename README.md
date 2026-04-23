@@ -1,7 +1,6 @@
 # Glide-distance-estimator
 **Educational/demo only-NOT FOR USE IN REAL-WORLD AVIATION. Use at your own risk.** 
 Estimates straight line glide distance of a aircraft from a altitude.
-DO NOT USE THIS PROGRAM IN ACTUAL AVIATION.
 This program was ment to be used with aircraft tracking websites and
 flight simulator games only.
 This program gives a rough estimate of glide distance.
