@@ -27,4 +27,8 @@ April 21 2026.
 Added better error checking for altitude on Glide distance estimator-C.cpp. Users are told what they did wrong.
 The map was changed to a unordered map.
 April 23 2026.
+A new file was added. Glide distance extimatorStruct.c.
+It uses a struct to store keys and values instead of arrays.
+I may be easer to add Aircraft and glide ratios than Glide distance estimator.c.
+May 26 2026.
 
