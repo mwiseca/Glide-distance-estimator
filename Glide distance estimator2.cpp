@@ -51,7 +51,7 @@ int main() {
             }
             auto i = gr.find(search);
             if (search == "x") {
-                exit(EXIT_SUCCESS);
+                return EXIT_SUCCESS;
             } else if (search == "i") {
                 ind();
                 std::cout << "Enter a aircraft in index.\n";
@@ -75,7 +75,7 @@ int main() {
                     std::cout << "Enter a altitude.\n";
                     continue;
                 } else if (altitude == "x") {
-                    exit(EXIT_SUCCESS);
+                    return EXIT_SUCCESS;
                 }
                 double result = stod(altitude) * gr.at(search) / 5280;
                 std::cout << "\nThe estimated glide distance is " << result << " miles.\n\n";
