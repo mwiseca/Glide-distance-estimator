@@ -4,6 +4,12 @@
 #include <iostream>
 #include <map>
 #include <string>
+
+void checkInput() {
+    std::cerr << "\nInvalid input.\n\n";
+    std::cin.clear();
+}
+
 void ind() {
     using namespace std;
     cout << "               \n";
@@ -18,6 +24,7 @@ void ind() {
 }
 
 int main() {
+    std::ios_base::sync_with_stdio(false);
     std::map<std::string, double> gr = {         
         {"aircraft a", 15},
         {"aircraft b",  9},
@@ -37,7 +44,9 @@ int main() {
     while (true) {
         try {
             std::cout << "Enter a aircraft in index.\n";
-            getline(std::cin, search);
+            while(!getline(std::cin, search);
+                checkInput();
+            }
             if (search == "x") {
                 break;
             } else if (search == "i") {
@@ -45,7 +54,9 @@ int main() {
                 continue;
             }
             std::cout << "Enter a altitude.\n";
-            getline(std::cin, altitude);
+            while(!getline(std::cin, altitude);
+                checkInput();
+            }
             if (altitude == "i") {
                 ind();
                 continue;
