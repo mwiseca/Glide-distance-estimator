@@ -44,7 +44,7 @@ int main() {
     while (true) {
         try {
             std::cout << "Enter a aircraft in index.\n";
-            while(!getline(std::cin, search);
+            while(!getline(std::cin, search)) {
                 checkInput();
             }
             if (search == "x") {
@@ -54,7 +54,7 @@ int main() {
                 continue;
             }
             std::cout << "Enter a altitude.\n";
-            while(!getline(std::cin, altitude);
+            while(!getline(std::cin, altitude)) {
                 checkInput();
             }
             if (altitude == "i") {
