@@ -5,6 +5,13 @@
 #include <iostream>
 #include <map>
 #include <string>
+
+void checkInput() {
+    std::cerr << "\nInvalid input.\n\n";
+    std::cin.clear();
+}
+
+
 void ind() {
     using namespace std;
     cout << "               \n";
@@ -19,6 +26,7 @@ void ind() {
 }
 
 int main() {
+    std::ios_base::sync_with_stdio(false);
     std::map<std::string, double> gr = {      
         {"aircraft a", 15},
         {"aircraft b",  9},
@@ -36,10 +44,14 @@ int main() {
     std::cout << "Enter i for index and x to exit.\n";
     while (true) {
         std::cout << "Enter a aircraft in index.\n";
-        while (getline(std::cin, search)) {
+        while(true) {
+            if (!getline(std::cin, search)) {
+                checkInput();
+                continue;
+            }
             auto i = gr.find(search);
             if (search == "x") {
-                exit(EXIT_SUCCESS);
+                return EXIT_SUCCESS;
             } else if (search == "i") {
                 ind();
                 std::cout << "Enter a aircraft in index.\n";
@@ -52,14 +64,18 @@ int main() {
             }
         }
         std::cout << "Enter a altitude.\n";
-        while (getline(std::cin, altitude)) {
+        while(true) {
+            if (!getline(std::cin, altitude)) {
+                checkInput();
+                continue;
+            }
             try {
                 if (altitude == "i") {
                     ind();
                     std::cout << "Enter a altitude.\n";
                     continue;
                 } else if (altitude == "x") {
-                    exit(EXIT_SUCCESS);
+                    return EXIT_SUCCESS;
                 }
                 double result = stod(altitude) * gr.at(search) / 5280;
                 std::cout << "\nThe estimated glide distance is " << result << " miles.\n\n";
