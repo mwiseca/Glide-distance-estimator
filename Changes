@@ -31,4 +31,6 @@ A new file was added. Glide distance extimatorStruct.c.
 It uses a struct to store keys and values instead of arrays.
 I may be easer to add Aircraft and glide ratios than Glide distance estimator.c.
 May 26 2026.
+Added check input function and getline error checking for Glide distance estimator.cpp and Glide distance estimator2.cpp.
+June15 2026.
 
