@@ -82,6 +82,8 @@ int main() {
                 break;
             } catch (std::invalid_argument) {
                 std::cout << "\nEnter a valid altitude.\n\n";
+            } catch (std::out_of_range) {
+                std::cout << "\nNumber out of range.\n\n";
             }
         }
     }

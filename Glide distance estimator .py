@@ -64,7 +64,10 @@ while True:
         print("Try again.")
     except ValueError:   
         print("Enter a valid altitude.")
-        print("Try again.")       
+        print("Try again.") 
+    except EOFError:
+        print("Invalid input.")
+        print("Try again.")
         
             
 
